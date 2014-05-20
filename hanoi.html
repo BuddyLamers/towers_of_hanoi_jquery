@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="hanoi.js" type="text/javascript"></script>
+  <script src="documentready.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="hanoi.css">
+</head>
+
+<body>
+  <p>Towers of Hanoi</p>
+   <div>
+<p>Click a stack to select a disk, click another to place it. Move all the disks to another stack! Careful: a larger one cannot go on top of a smaller one.</p>
+  </div>
+
+  <div id="container">
+    <ul class="stack" id="stack0">
+      <li id="02"></li>
+      <li id="01"></li>
+      <li id="00"></li>
+    </ul>
+
+    <ul class="stack" id="stack1">
+      <li id="12"></li>
+      <li id="11"></li>
+      <li id="10"></li>
+    </ul>
+
+    <ul class="stack" id="stack2">
+      <li id="22"></li>
+      <li id="21"></li>
+      <li id="20"></li>
+    </ul>
+  </div>
+
+ 
+
+  <script> window.myGame = new Hanoi.Game(); </script>
+</body>
